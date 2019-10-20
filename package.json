@@ -9,13 +9,7 @@
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
-  "keywords": [
-    "aws",
-    "s3",
-    "load",
-    "balancer",
-    "ec2"
-  ],
+  "keywords": [],
   "author": "Jarron Bailey",
   "license": "ISC",
   "dependencies": {
