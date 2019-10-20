@@ -3,15 +3,10 @@ const { Router } = require('express');
 const router = Router();
 
 // Routes
+const sampleRoutes = require('./sample.routes');
 
-// const auth = require('./auth.routes');
-// router.use('/auth', auth);
-
-const { sample } = require('../controllers');
-
-// router.get('/', async (req, res, next) => {
-//   res.send('Welcome to my API');
-// });
-router.route('/').get(sample.getIndex);
+// Use routes
+// Can add middleware
+router.use('/', sampleRoutes);
 
 module.exports = router;
